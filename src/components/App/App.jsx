@@ -1,7 +1,14 @@
+import ImageGallery from "../ImageGallery/ImageGallery";
+import SearchBar from "../SearchBar/SearchBar";
+
 export default function App() {
+  const handlSearch = async () => {
+    return console.log("submit");
+  };
   return (
     <div>
-      <h1>Hello</h1>
+      <SearchBar onSearch={handlSearch} />
+      <ImageGallery />
     </div>
   );
 }

@@ -6,7 +6,7 @@ const notify = () => toast("You forgot to describe the image");
 
 export default function SearchBar({ onSearch }) {
   return (
-    <header>
+    <header className={css.header}>
       <Formik
         initialValues={{ query: "" }}
         onSubmit={(values, actions) => {

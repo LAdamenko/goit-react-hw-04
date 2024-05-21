@@ -2,6 +2,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 36px;
+  height: 40px;
   background-color: rgb(23, 23, 206);
+}
+
+.form {
+  display: inline-flex;
+  border: none;
+  padding: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  order: -1;
+}
+
+.input {
+  width: 300px;
+  border: 0;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
 }

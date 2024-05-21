@@ -1,5 +1,6 @@
 import { Field, Form, Formik } from "formik";
 import toast, { Toaster } from "react-hot-toast";
+import { IoSearchOutline } from "react-icons/io5";
 import css from "./SearchBar.module.css";
 
 const notify = () => toast("You forgot to describe the image");
@@ -27,8 +28,10 @@ export default function SearchBar({ onSearch }) {
             autoFocus
             placeholder="Search images and photos"
           />
-          <button type="submit">Search</button>
-          <Toaster />
+          <button className={css.btn} type="submit">
+            <IoSearchOutline className={css.icon} size="20" />
+          </button>
+          <Toaster position="top-right" />
         </Form>
       </Formik>
     </header>
